@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gafat Art Painting and Design Works | ጋፋት የስእልና ንድፍ ስራዎች</title>
+<meta name="description" content="Gafat Art Painting and Design Works — an online gallery of original paintings and design work. Explore collections, browse individual artworks, and get in touch.">
+<meta name="theme-color" content="#FAF7F0">
+
+<meta property="og:title" content="Gafat Art Painting and Design Works | ጋፋት የስእልና ንድፍ ስራዎች">
+<meta property="og:description" content="An online gallery of original paintings and design work. Explore the collections.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FAF7F0'/%3E%3Ccircle cx='50' cy='50' r='28' fill='none' stroke='%23C9A227' stroke-width='4'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Noto+Serif+Ethiopic:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --white:#FFFFFF;
+    --ivory:#FAF7F0;
+    --cream:#F5EBDD;
+    --champagne:#F1DFC0;
+    --gold:#C9A227;
+    --gold-soft:#E6C76A;
+    --beige:#E8DED0;
+    --ink:#2B2926;
+    --ink-soft:#5b564e;
+    --peach:#F6C7B6;
+    --rose:#E8B7C8;
+    --sage:#C9D8C0;
+    --sky:#C8DDED;
+    --lavender:#D8CBE8;
+
+    --font-display:'Playfair Display', Georgia, serif;
+    --font-sans:'Manrope', 'Inter', -apple-system, sans-serif;
+    --font-am:'Noto Sans Ethiopic', sans-serif;
+    --font-am-serif:'Noto Serif Ethiopic', serif;
+
+    --shadow-soft: 0 10px 30px -12px rgba(43,41,38,0.14);
+    --shadow-lift: 0 24px 60px -16px rgba(43,41,38,0.22);
+    --radius: 18px;
+    --nav-h: 84px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--white);
+    color:var(--ink);
+    font-family:var(--font-sans);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;cursor:pointer;}
+  h1,h2,h3{font-family:var(--font-display);font-weight:500;margin:0;letter-spacing:-0.01em;}
+  .am{font-family:var(--font-am);}
+  .am-serif{font-family:var(--font-am-serif);}
+  .container{max-width:1280px;margin:0 auto;padding:0 32px;}
+  @media (max-width:640px){.container{padding:0 20px;}}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- reveal on scroll ---------- */
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .8s ease, transform .8s ease;}
+  .reveal.is-visible{opacity:1; transform:translateY(0);}
+
+  /* ---------- background wash ---------- */
+  .wash{position:relative; isolation:isolate;}
+  .wash::before{
+    content:"";
+    position:absolute; inset:0; z-index:-1;
+    background:var(--bg, linear-gradient(180deg, var(--white), var(--ivory)));
+  }
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:fixed; top:0; left:0; right:0; z-index:200;
+    height:var(--nav-h);
+    display:flex; align-items:center;
+    background:rgba(255,255,255,0.6);
+    backdrop-filter:blur(18px) saturate(1.4);
+    -webkit-backdrop-filter:blur(18px) saturate(1.4);
+    border-bottom:1px solid rgba(201,162,39,0.18);
+    transition:background .4s ease, box-shadow .4s ease, height .4s ease;
+  }
+  header.nav.scrolled{
+    background:rgba(255,255,255,0.86);
+    box-shadow:0 8px 30px -14px rgba(43,41,38,0.18);
+    height:68px;
+  }
+  .nav-inner{display:flex; align-items:center; justify-content:space-between; width:100%;}
+  .brand{display:flex; flex-direction:column; line-height:1.15;}
+  .brand .am-serif{font-size:19px; font-weight:600; color:var(--ink);}
+  .brand .en{font-size:10.5px; letter-spacing:0.06em; color:var(--ink-soft); font-weight:600; text-transform:uppercase;}
+  .nav-links{display:flex; gap:38px; align-items:center;}
+  .nav-links a{font-size:14.5px; font-weight:600; color:var(--ink-soft); position:relative; padding:6px 0;}
+  .nav-links a::after{
+    content:""; position:absolute; left:0; right:0; bottom:0; height:1.5px;
+    background:var(--gold); transform:scaleX(0); transform-origin:left; transition:transform .35s ease;
+  }
+  .nav-links a:hover, .nav-links a.active{color:var(--ink);}
+  .nav-links a:hover::after, .nav-links a.active::after{transform:scaleX(1);}
+  .nav-cta{
+    border:1px solid var(--gold); color:var(--ink); background:transparent;
+    padding:10px 20px; border-radius:999px; font-size:13.5px; font-weight:700;
+    transition:background .3s ease, color .3s ease;
+  }
+  .nav-cta:hover{background:var(--gold); color:#fff;}
+  .hamburger{display:none; flex-direction:column; gap:5px; background:none; border:none; padding:8px;}
+  .hamburger span{width:24px; height:2px; background:var(--ink); border-radius:2px; transition:transform .3s ease, opacity .3s ease;}
+  .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .hamburger.open span:nth-child(2){opacity:0;}
+  .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  .mobile-menu{
+    position:fixed; top:var(--nav-h); left:0; right:0; z-index:190;
+    background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,247,240,0.98));
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(201,162,39,0.18);
+    display:flex; flex-direction:column; padding:12px 28px 28px;
+    transform:translateY(-12px); opacity:0; pointer-events:none;
+    transition:transform .35s ease, opacity .35s ease;
+  }
+  .mobile-menu.open{transform:translateY(0); opacity:1; pointer-events:auto;}
+  .mobile-menu a{padding:16px 4px; font-size:17px; font-weight:600; border-bottom:1px solid rgba(43,41,38,0.08);}
+
+  @media (max-width:900px){
+    .nav-links, .nav-cta.desktop{display:none;}
+    .hamburger{display:flex;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative; padding:calc(var(--nav-h) + 64px) 0 90px;
+    background:radial-gradient(ellipse 90% 60% at 15% 0%, rgba(241,223,192,0.55), transparent 60%),
+               radial-gradient(ellipse 70% 50% at 90% 20%, rgba(200,221,237,0.35), transparent 60%),
+               var(--white);
+    overflow:hidden;
+  }
+  .hero-grid{display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;}
+  @media (max-width:980px){.hero-grid{grid-template-columns:1fr; gap:48px;}}
+
+  .hero-eyebrow{
+    display:inline-flex; align-items:center; gap:10px; color:var(--gold); font-weight:700;
+    font-size:13px; letter-spacing:0.04em; margin-bottom:22px;
+  }
+  .hero-eyebrow::before{content:""; width:26px; height:1px; background:var(--gold);}
+  .hero h1.am-serif{font-size:clamp(38px,6vw,64px); font-weight:600; color:var(--ink); margin-bottom:10px;}
+  .hero .en-name{font-family:var(--font-display); font-size:clamp(19px,2.4vw,24px); font-style:italic; color:var(--ink-soft); margin-bottom:26px;}
+  .hero p.statement{font-size:18px; color:var(--ink-soft); max-width:460px; margin-bottom:38px;}
+  .hero-ctas{display:flex; gap:16px; flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--ink); color:var(--ivory); padding:16px 30px; border-radius:999px;
+    font-weight:700; font-size:14.5px; border:1px solid var(--ink); transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:var(--shadow-lift);}
+  .btn-ghost{
+    background:transparent; color:var(--ink); padding:16px 30px; border-radius:999px;
+    font-weight:700; font-size:14.5px; border:1px solid var(--beige); transition:border-color .3s ease, transform .3s ease;
+  }
+  .btn-ghost:hover{border-color:var(--gold); transform:translateY(-2px);}
+
+  .hero-visual{position:relative; height:480px;}
+  @media (max-width:980px){.hero-visual{height:360px;}}
+  .float-frame{
+    position:absolute; border-radius:14px; background:var(--ivory);
+    box-shadow:var(--shadow-lift); overflow:hidden; border:1px solid rgba(201,162,39,0.25);
+  }
+  .float-frame img{width:100%; height:100%; object-fit:cover;}
+  .frame-a{width:64%; height:78%; top:0; right:0; z-index:2; animation:float-a 7s ease-in-out infinite;}
+  .frame-b{width:46%; height:50%; bottom:0; left:0; z-index:3; border:6px solid var(--white); animation:float-b 8s ease-in-out infinite;}
+  .glow-orb{
+    position:absolute; width:220px; height:220px; border-radius:50%; filter:blur(50px); opacity:0.55; z-index:1;
+    background:radial-gradient(circle, var(--gold-soft), transparent 70%); top:10%; left:-40px;
+  }
+  @keyframes float-a{0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);}}
+  @keyframes float-b{0%,100%{transform:translateY(0);}50%{transform:translateY(12px);}}
+
+  /* ---------- SECTION HEADERS ---------- */
+  .section{padding:96px 0;}
+  .section-head{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:40px; gap:24px; flex-wrap:wrap;}
+  .section-head h2{font-size:clamp(28px,3.6vw,42px);}
+  .section-head .sub{color:var(--ink-soft); font-size:15px; max-width:420px;}
+  .section-num{font-family:var(--font-display); font-style:italic; color:var(--gold); font-size:15px;}
+
+  /* ---------- COLLECTION (horizontal) ---------- */
+  .collection-block{padding:64px 0; position:relative;}
+  .collection-block:nth-of-type(odd){background:var(--bg1, linear-gradient(180deg, var(--white), var(--ivory) 60%, var(--white)));}
+  .collection-block:nth-of-type(even){background:var(--bg2, linear-gradient(180deg, var(--white), var(--cream) 60%, var(--white)));}
+
+  .rail-wrap{position:relative;}
+  .rail{
+    display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x proximity;
+    padding:12px 32px 28px; margin:0 -32px;
+    -webkit-overflow-scrolling:touch; scrollbar-width:none;
+  }
+  .rail::-webkit-scrollbar{display:none;}
+  .art-card{
+    flex:0 0 auto; width:280px; scroll-snap-align:start; cursor:pointer;
+    border-radius:var(--radius); background:var(--white);
+    border:1px solid rgba(201,162,39,0.16);
+    box-shadow:var(--shadow-soft);
+    overflow:hidden; position:relative;
+    transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease;
+  }
+  .art-card:nth-child(3n+1){transform:rotate(-0.4deg);}
+  .art-card:nth-child(3n+2){transform:rotate(0.3deg);}
+  .art-card:hover{transform:translateY(-8px) scale(1.02); box-shadow:var(--shadow-lift); z-index:5;}
+  .art-card .frame{aspect-ratio:4/5; overflow:hidden; position:relative; background:linear-gradient(135deg, var(--cream), var(--champagne));}
+  .art-card .frame img{width:100%; height:100%; object-fit:cover; transition:transform .6s ease;}
+  .art-card:hover .frame img{transform:scale(1.08);}
+  .art-card .placeholder{
+    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+    flex-direction:column; gap:8px; color:var(--gold); font-family:var(--font-display); font-style:italic;
+  }
+  .art-card .view-tag{
+    position:absolute; bottom:14px; left:14px; background:rgba(255,255,255,0.92); color:var(--ink);
+    padding:7px 14px; border-radius:999px; font-size:12px; font-weight:700;
+    opacity:0; transform:translateY(8px); transition:opacity .35s ease, transform .35s ease;
+    border:1px solid var(--gold);
+  }
+  .art-card:hover .view-tag{opacity:1; transform:translateY(0);}
+  .art-card .cap{padding:14px 16px 16px;}
+  .art-card .cap .t{font-size:14px; font-weight:700;}
+  .art-card .cap .n{font-size:12px; color:var(--ink-soft);}
+
+  .rail-nav{position:absolute; top:40%; width:100%; display:flex; justify-content:space-between; pointer-events:none; padding:0 4px;}
+  .rail-btn{
+    pointer-events:auto; width:46px; height:46px; border-radius:50%; background:rgba(255,255,255,0.9);
+    border:1px solid var(--gold); display:flex; align-items:center; justify-content:center;
+    box-shadow:var(--shadow-soft); transition:transform .25s ease, background .25s ease;
+  }
+  .rail-btn:hover{background:var(--gold); color:#fff; transform:scale(1.06);}
+  @media (max-width:640px){.rail-nav{display:none;}}
+
+  .explore-row{display:flex; justify-content:flex-end; margin-top:22px;}
+  .explore-more{
+    display:inline-flex; align-items:center; gap:10px; background:var(--white); border:1px solid var(--gold);
+    padding:14px 24px; border-radius:999px; font-weight:700; font-size:14px; box-shadow:var(--shadow-soft);
+    transition:transform .3s ease, box-shadow .3s ease, gap .3s ease;
+  }
+  .explore-more:hover{transform:translateY(-3px); box-shadow:var(--shadow-lift); gap:14px;}
+  .explore-more svg{width:16px; height:16px;}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:64px; align-items:center;}
+  @media (max-width:900px){.about-grid{grid-template-columns:1fr;}}
+  .about-visual{position:relative; height:420px;}
+  .about-visual .float-frame{width:82%; height:82%; top:0; left:0;}
+  .about-visual .accent{
+    position:absolute; bottom:-24px; right:-24px; width:55%; height:46%;
+    border-radius:14px; background:linear-gradient(135deg, var(--peach), var(--rose));
+    opacity:0.5; z-index:0; filter:blur(2px);
+  }
+  .about-copy .tag{color:var(--gold); font-weight:700; font-size:13px; letter-spacing:0.04em; margin-bottom:14px; display:block;}
+  .about-copy p{color:var(--ink-soft); font-size:16.5px; margin-bottom:18px; max-width:520px;}
+  .about-points{display:flex; gap:14px; flex-wrap:wrap; margin-top:28px;}
+  .pt{
+    background:var(--ivory); border:1px solid var(--beige); border-radius:12px; padding:10px 16px;
+    font-size:13.5px; font-weight:600; color:var(--ink);
+  }
+
+  /* ---------- CONTACT ---------- */
+  .contact-wrap{
+    background:linear-gradient(135deg, var(--ivory), var(--cream));
+    border-radius:28px; padding:64px; position:relative; overflow:hidden;
+  }
+  @media (max-width:640px){.contact-wrap{padding:36px 24px; border-radius:20px;}}
+  .contact-wrap::before{
+    content:""; position:absolute; width:300px; height:300px; border-radius:50%;
+    background:radial-gradient(circle, var(--sky), transparent 70%); top:-120px; right:-80px; opacity:0.5;
+  }
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; position:relative; z-index:1;}
+  @media (max-width:900px){.contact-grid{grid-template-columns:1fr; gap:40px;}}
+  .contact-wrap h2{font-size:clamp(28px,3.6vw,40px); margin-bottom:16px;}
+  .contact-wrap>div>p.lead{color:var(--ink-soft); margin-bottom:30px; max-width:420px;}
+  .contact-actions{display:flex; gap:14px; flex-wrap:wrap;}
+  .contact-btn{
+    display:inline-flex; align-items:center; gap:10px; background:var(--white); border:1px solid var(--gold);
+    padding:14px 22px; border-radius:999px; font-weight:700; font-size:14px; box-shadow:var(--shadow-soft);
+    transition:transform .3s ease;
+  }
+  .contact-btn:hover{transform:translateY(-3px);}
+  .contact-btn svg{width:16px; height:16px;}
+
+  .form-card{
+    background:rgba(255,255,255,0.75); backdrop-filter:blur(10px); border:1px solid rgba(201,162,39,0.25);
+    border-radius:20px; padding:32px; box-shadow:var(--shadow-soft);
+  }
+  .field{margin-bottom:18px;}
+  .field label{display:block; font-size:12.5px; font-weight:700; color:var(--ink-soft); margin-bottom:7px; letter-spacing:0.02em;}
+  .field input, .field textarea{
+    width:100%; border:1px solid var(--beige); background:var(--white); border-radius:10px; padding:13px 14px;
+    font-family:inherit; font-size:14.5px; color:var(--ink); transition:border-color .25s ease, box-shadow .25s ease;
+  }
+  .field input:focus, .field textarea:focus{outline:none; border-color:var(--gold); box-shadow:0 0 0 3px rgba(201,162,39,0.15);}
+  .field textarea{resize:vertical; min-height:100px;}
+  .form-submit{
+    width:100%; background:var(--ink); color:var(--ivory); padding:15px; border-radius:10px; border:none;
+    font-weight:700; font-size:14.5px; transition:opacity .25s ease;
+  }
+  .form-submit:hover{opacity:0.88;}
+  .form-note{font-size:12.5px; color:var(--ink-soft); margin-top:12px; line-height:1.5;}
+  .form-note a{color:var(--gold); font-weight:700;}
+  .form-success{display:none; text-align:center; padding:20px 8px;}
+  .form-success.show{display:block;}
+  .form-success svg{width:36px; height:36px; color:var(--gold); margin-bottom:10px;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:linear-gradient(180deg, var(--ivory), var(--cream)); border-top:1px solid var(--beige); padding:60px 0 30px;}
+  .footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:40px; margin-bottom:44px;}
+  @media (max-width:760px){.footer-grid{grid-template-columns:1fr; gap:32px;}}
+  .footer-brand .am-serif{font-size:22px; font-weight:600;}
+  .footer-brand .en{font-size:12.5px; color:var(--ink-soft); margin-top:4px;}
+  footer h4{font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); margin-bottom:16px; font-weight:700;}
+  footer ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px;}
+  footer a.flink{font-size:14.5px; color:var(--ink-soft); transition:color .25s ease;}
+  footer a.flink:hover{color:var(--ink);}
+  .footer-bottom{border-top:1px solid var(--beige); padding-top:22px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:12.5px; color:var(--ink-soft);}
+
+  /* ---------- COLLECTION PAGE ---------- */
+  #view-collection{display:none;}
+  #view-collection.active{display:block;}
+  #view-home.hidden{display:none;}
+
+  .coll-hero{padding:calc(var(--nav-h) + 56px) 0 50px; background:linear-gradient(180deg, var(--ivory), var(--white));}
+  .coll-back{display:inline-flex; align-items:center; gap:8px; font-size:13.5px; font-weight:700; color:var(--ink-soft); margin-bottom:26px;}
+  .coll-back svg{width:15px; height:15px;}
+  .coll-hero h1{font-size:clamp(30px,5vw,50px); margin-bottom:14px;}
+  .coll-hero p{color:var(--ink-soft); font-size:16px; max-width:560px;}
+
+  .masonry{
+    column-count:3; column-gap:24px; padding:20px 0 30px;
+  }
+  @media (max-width:980px){.masonry{column-count:2;}}
+  @media (max-width:600px){.masonry{column-count:1;}}
+  .masonry .art-card{width:100%; margin-bottom:24px; break-inside:avoid;}
+  .masonry .art-card:nth-child(4n+1) .frame{aspect-ratio:3/4;}
+  .masonry .art-card:nth-child(4n+2) .frame{aspect-ratio:1/1;}
+  .masonry .art-card:nth-child(4n+3) .frame{aspect-ratio:4/5;}
+  .masonry .art-card:nth-child(4n+4) .frame{aspect-ratio:5/4;}
+
+  .coll-cta{padding:70px 0 100px; text-align:center;}
+  .coll-cta h3{font-size:clamp(24px,3vw,32px); margin-bottom:20px;}
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{
+    position:fixed; inset:0; z-index:500; display:none; align-items:center; justify-content:center;
+    background:rgba(250,247,240,0.92); backdrop-filter:blur(14px);
+    opacity:0; transition:opacity .35s ease;
+  }
+  .lightbox.open{display:flex; opacity:1;}
+  .lb-inner{position:relative; width:min(90vw, 900px); max-height:88vh; display:flex; flex-direction:column; align-items:center;}
+  .lb-img-wrap{
+    background:var(--white); border-radius:14px; box-shadow:var(--shadow-lift); padding:14px;
+    max-height:74vh; display:flex; align-items:center; justify-content:center; overflow:hidden;
+  }
+  .lb-img-wrap img{max-height:70vh; max-width:100%; object-fit:contain; border-radius:6px; transition:transform .3s ease;}
+  .lb-caption{margin-top:18px; text-align:center;}
+  .lb-caption .t{font-family:var(--font-display); font-size:20px;}
+  .lb-caption .n{font-size:13px; color:var(--ink-soft); margin-top:4px;}
+  .lb-close{
+    position:absolute; top:-6px; right:-6px; width:42px; height:42px; border-radius:50%; background:var(--white);
+    border:1px solid var(--gold); display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow-soft);
+  }
+  @media (max-width:640px){.lb-close{top:-46px; right:0;}}
+  .lb-arrow{
+    position:fixed; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%;
+    background:var(--white); border:1px solid var(--gold); display:flex; align-items:center; justify-content:center;
+    box-shadow:var(--shadow-soft); z-index:501;
+  }
+  .lb-arrow.prev{left:24px;} .lb-arrow.next{right:24px;}
+  @media (max-width:760px){.lb-arrow{width:40px; height:40px;} .lb-arrow.prev{left:8px;} .lb-arrow.next{right:8px;}}
+  .lb-zoom{position:absolute; bottom:14px; right:14px; width:38px; height:38px; border-radius:50%; background:var(--white); border:1px solid var(--gold); display:flex; align-items:center; justify-content:center;}
+  .icon{width:18px; height:18px; stroke:var(--ink); fill:none; stroke-width:1.8;}
+
+  /* ---------- PREMIUM GLASS + 3D ENHANCEMENTS ---------- */
+  :root{
+    --glass:rgba(255,255,255,0.48);
+    --glass-strong:rgba(255,255,255,0.72);
+    --glass-border:rgba(255,255,255,0.72);
+    --deep-shadow:0 30px 80px -24px rgba(43,41,38,0.28);
+  }
+  body{
+    background:
+      radial-gradient(circle at 8% 8%, rgba(241,223,192,0.35), transparent 28rem),
+      radial-gradient(circle at 94% 24%, rgba(216,203,232,0.22), transparent 30rem),
+      #fbfaf8;
+  }
+  header.nav{
+    height:96px;
+    background:linear-gradient(105deg, rgba(255,255,255,0.72), rgba(255,255,255,0.38));
+    border-bottom:1px solid rgba(255,255,255,0.9);
+    box-shadow:0 12px 40px -28px rgba(43,41,38,0.42);
+  }
+  header.nav.scrolled{height:72px; background:rgba(255,255,255,0.82); box-shadow:0 16px 40px -24px rgba(43,41,38,0.32);}
+  header.nav::after{
+    content:""; position:absolute; left:8%; right:8%; bottom:-1px; height:1px;
+    background:linear-gradient(90deg, transparent, rgba(201,162,39,0.55), transparent);
+  }
+  header.nav > .container{max-width:1460px;}
+  .brand{position:relative; padding-left:50px;}
+  .brand-mark{
+    position:absolute; left:0; top:50%; transform:translateY(-50%) rotate(-12deg);
+    width:38px; height:38px; border-radius:12px;
+    background:linear-gradient(145deg, #fff, #ead9bd);
+    border:1px solid rgba(201,162,39,0.55);
+    box-shadow:inset 4px 4px 8px rgba(255,255,255,0.95), inset -5px -5px 10px rgba(201,162,39,0.2), 0 10px 18px -12px rgba(43,41,38,0.6);
+  }
+  .brand-mark::before,.brand-mark::after,.brand-mark span{
+    content:""; position:absolute; border-radius:50%; border:1px solid var(--gold);
+  }
+  .brand-mark::before{inset:8px;}
+  .brand-mark::after{inset:13px; background:var(--gold); border:0; box-shadow:0 0 0 3px rgba(255,255,255,0.55);}
+  .brand-mark span{inset:4px; border-color:rgba(255,255,255,0.9);}
+  .nav-links{gap:42px;}
+  .nav-links a{letter-spacing:0.01em;}
+  .nav-cta{
+    background:rgba(255,255,255,0.52);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.9), 0 8px 18px -14px rgba(43,41,38,0.5);
+  }
+  .hero{
+    min-height:720px;
+    padding-top:calc(var(--nav-h) + 90px);
+    background:
+      radial-gradient(ellipse 70% 60% at 10% 14%, rgba(241,223,192,0.72), transparent 68%),
+      radial-gradient(ellipse 60% 60% at 94% 20%, rgba(200,221,237,0.48), transparent 70%),
+      linear-gradient(135deg, #fff 0%, #faf7f0 52%, #f8f1e8 100%);
+  }
+  .hero::before{
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:.38;
+    background-image:radial-gradient(rgba(43,41,38,.12) .7px, transparent .7px);
+    background-size:18px 18px; mask-image:linear-gradient(to bottom, rgba(0,0,0,.45), transparent 68%);
+  }
+  .hero-backdrop{
+    position:absolute; inset:0; z-index:-1; overflow:hidden; pointer-events:none;
+    opacity:.2; mix-blend-mode:multiply;
+  }
+  .hero-backdrop::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(90deg, rgba(250,247,240,.98) 0%, rgba(250,247,240,.68) 44%, rgba(250,247,240,.8) 100%);
+  }
+  .hero-backdrop img{
+    width:100%; height:100%; object-fit:cover; filter:blur(30px) saturate(1.35);
+    transform:scale(1.14); opacity:.76;
+  }
+  .hero-grid{position:relative; z-index:2;}
+  .hero h1.am-serif{text-shadow:0 10px 30px rgba(43,41,38,0.08);}
+  .hero .statement{font-size:19px;}
+  .hero-visual{
+    height:520px; perspective:1400px; transform-style:preserve-3d;
+  }
+  .float-frame{
+    background:var(--glass-strong);
+    border:1px solid rgba(255,255,255,0.9);
+    box-shadow:var(--deep-shadow), inset 0 1px 0 rgba(255,255,255,0.9);
+    backdrop-filter:blur(12px) saturate(1.3);
+    -webkit-backdrop-filter:blur(12px) saturate(1.3);
+    transform-style:preserve-3d;
+  }
+  .float-frame::after{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background:linear-gradient(120deg, rgba(255,255,255,.38), transparent 32%, transparent 70%, rgba(201,162,39,.1));
+    mix-blend-mode:screen;
+  }
+  .frame-a{width:66%; height:80%; transform:rotate(3deg) translateZ(18px);}
+  .frame-b{width:48%; height:51%; transform:rotate(-6deg) translateZ(60px);}
+  .glow-orb{width:300px; height:300px; filter:blur(58px); opacity:.7; top:4%; left:-62px;}
+  .hero-badge{
+    position:absolute; z-index:6; display:flex; align-items:center; gap:10px;
+    padding:12px 15px 12px 12px; border-radius:16px;
+    color:var(--ink); font-size:11px; font-weight:800; letter-spacing:.04em; text-transform:uppercase;
+    background:rgba(255,255,255,.46); border:1px solid rgba(255,255,255,.86);
+    box-shadow:0 18px 38px -20px rgba(43,41,38,.5), inset 0 1px 0 rgba(255,255,255,.95);
+    backdrop-filter:blur(18px) saturate(1.4); -webkit-backdrop-filter:blur(18px) saturate(1.4);
+    transform:translateZ(110px) rotate(-4deg);
+    animation:badge-float 6s ease-in-out infinite;
+  }
+  .hero-badge .badge-icon{
+    width:32px; height:32px; display:grid; place-items:center; border-radius:11px;
+    color:#fff; background:linear-gradient(145deg, var(--gold-soft), var(--gold));
+    box-shadow:inset 2px 2px 4px rgba(255,255,255,.55), 0 7px 12px -8px rgba(43,41,38,.75);
+  }
+  .hero-badge .badge-icon svg{width:17px; height:17px; stroke:currentColor; fill:none; stroke-width:1.8;}
+  .hero-badge.one{top:11%; left:3%;}
+  .hero-badge.two{right:2%; bottom:14%; animation-delay:-2.2s; transform:translateZ(130px) rotate(5deg);}
+  @keyframes badge-float{0%,100%{margin-top:0;}50%{margin-top:-12px;}}
+  .btn-primary{box-shadow:0 16px 30px -18px rgba(43,41,38,.75), inset 0 1px 0 rgba(255,255,255,.18);}
+  .btn-ghost{background:rgba(255,255,255,.34); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);}
+
+  .collection-block{position:relative; overflow:hidden;}
+  .collection-block::before{
+    content:""; position:absolute; width:240px; height:240px; border-radius:50%; right:-80px; top:14%;
+    background:radial-gradient(circle, rgba(200,221,237,.36), transparent 68%); filter:blur(4px); pointer-events:none;
+  }
+  .rail{perspective:1400px; padding-top:22px;}
+  .art-card.tilt-card{
+    --rx:0deg; --ry:0deg; --twist:0deg;
+    transform:perspective(1100px) rotateX(var(--rx)) rotateY(var(--ry)) rotate(var(--twist)) translateZ(0);
+    transform-style:preserve-3d;
+    border-color:rgba(255,255,255,.84);
+    background:linear-gradient(145deg, rgba(255,255,255,.84), rgba(255,255,255,.54));
+    backdrop-filter:blur(16px) saturate(1.2); -webkit-backdrop-filter:blur(16px) saturate(1.2);
+    box-shadow:var(--deep-shadow), inset 0 1px 0 rgba(255,255,255,.92);
+  }
+  .art-card.tilt-card:nth-child(3n+1){--twist:-.6deg;}
+  .art-card.tilt-card:nth-child(3n+2){--twist:.5deg;}
+  .art-card.tilt-card:hover{
+    transform:perspective(1100px) rotateX(var(--rx)) rotateY(var(--ry)) rotate(var(--twist)) translateY(-12px) scale(1.025) translateZ(12px);
+    box-shadow:0 34px 65px -24px rgba(43,41,38,.38), inset 0 1px 0 rgba(255,255,255,.98);
+  }
+  .art-card .frame{background:linear-gradient(135deg, #f6eadc, #e7d2b5);}
+  .art-card .frame::after{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background:linear-gradient(135deg, rgba(255,255,255,.32), transparent 30%, transparent 72%, rgba(43,41,38,.12));
+  }
+  .art-card .cap{background:linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,.92));}
+  .art-card .view-tag{box-shadow:0 8px 18px -10px rgba(43,41,38,.6); backdrop-filter:blur(8px);}
+  .section-head h2{letter-spacing:-.03em;}
+  .section-num{display:inline-flex; align-items:center; gap:8px;}
+  .section-num::after{content:""; width:34px; height:1px; background:linear-gradient(90deg,var(--gold),transparent);}
+
+  .about-visual{perspective:1200px;}
+  .about-visual .float-frame{transform:rotate(-3deg) rotateY(8deg) translateZ(20px);}
+  .about-visual .accent{box-shadow:0 24px 45px -28px rgba(43,41,38,.5); transform:rotate(6deg) translateZ(-20px);}
+  .pt{
+    background:rgba(255,255,255,.52); border-color:rgba(255,255,255,.8);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.9), 0 10px 20px -16px rgba(43,41,38,.45);
+    backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  }
+  .contact-wrap{
+    background:
+      linear-gradient(135deg, rgba(255,255,255,.62), rgba(245,235,221,.7)),
+      radial-gradient(circle at 90% 10%, rgba(200,221,237,.7), transparent 36%);
+    border:1px solid rgba(255,255,255,.82); box-shadow:var(--deep-shadow), inset 0 1px 0 rgba(255,255,255,.9);
+    backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
+  }
+  .form-card{
+    background:rgba(255,255,255,.48); border-color:rgba(255,255,255,.84);
+    box-shadow:0 24px 50px -28px rgba(43,41,38,.36), inset 0 1px 0 rgba(255,255,255,.9);
+    backdrop-filter:blur(18px) saturate(1.2); -webkit-backdrop-filter:blur(18px) saturate(1.2);
+  }
+  .field input,.field textarea{background:rgba(255,255,255,.7); border-color:rgba(201,162,39,.22);}
+  .contact-btn{background:rgba(255,255,255,.55); border-color:rgba(255,255,255,.86); backdrop-filter:blur(12px);}
+  footer{background:linear-gradient(180deg, rgba(250,247,240,.86), rgba(245,235,221,.96));}
+  #about.section{
+    position:relative; overflow:hidden;
+    padding-top:122px; padding-bottom:104px;
+    background:
+      radial-gradient(circle at 14% 40%, rgba(241,223,192,.34), transparent 24rem),
+      linear-gradient(180deg, rgba(255,255,255,.82), rgba(250,247,240,.5));
+  }
+  #about.section::after{
+    content:"ABOUT THE MAKER"; position:absolute; right:-54px; top:50%;
+    transform:translateY(-50%) rotate(90deg); color:rgba(201,162,39,.2);
+    font-size:11px; font-weight:800; letter-spacing:.3em;
+  }
+  .section-transition{
+    display:flex; align-items:center; justify-content:center; gap:16px;
+    padding:8px 32px 34px; background:linear-gradient(180deg, rgba(250,247,240,.5), rgba(255,255,255,.82));
+  }
+  .transition-line{
+    width:min(180px,22vw); height:1px;
+    background:linear-gradient(90deg, transparent, rgba(201,162,39,.52), transparent);
+  }
+  .transition-orb{
+    width:12px; height:12px; border-radius:50%; flex:0 0 auto;
+    background:linear-gradient(145deg, #f5dfa4, var(--gold));
+    border:2px solid rgba(255,255,255,.9);
+    box-shadow:0 0 0 5px rgba(201,162,39,.1), 0 7px 15px -8px rgba(43,41,38,.6);
+  }
+  .coll-hero{background:
+    radial-gradient(circle at 86% 10%, rgba(216,203,232,.4), transparent 24rem),
+    linear-gradient(180deg, rgba(245,235,221,.88), rgba(255,255,255,.9));}
+  .lightbox{background:rgba(36,32,28,.68);}
+  .lb-img-wrap{background:rgba(255,255,255,.74); border:1px solid rgba(255,255,255,.8); backdrop-filter:blur(16px);}
+  @media (max-width:640px){
+    header.nav{height:82px;}
+    .hero{min-height:auto; padding-top:calc(var(--nav-h) + 64px);}
+    .hero-visual{height:380px; margin-top:14px;}
+    #about.section{padding-top:88px; padding-bottom:78px;}
+    #about.section::after{display:none;}
+    .hero-badge{font-size:9px; padding:9px 10px 9px 8px;}
+    .hero-badge .badge-icon{width:27px; height:27px;}
+    .hero-badge.one{left:-2%;}
+    .hero-badge.two{right:-2%;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .hero-badge{animation:none;}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="#/" class="brand" data-link>
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span class="am-serif">ጋፋት የስእልና ንድፍ ስራዎች</span>
+      <span class="en">Gafat Art Painting &amp; Design</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#/" data-link>Home</a>
+      <a href="#gallery-section" data-link>Gallery</a>
+      <a href="#collections-nav" data-link>Collections</a>
+      <a href="#about" data-link>About</a>
+      <a href="#contact" data-link>Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta desktop" data-link>Contact Us</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#/" data-link>Home</a>
+    <a href="#gallery-section" data-link>Gallery</a>
+    <a href="#collections-nav" data-link>Collections</a>
+    <a href="#about" data-link>About</a>
+    <a href="#contact" data-link>Contact</a>
+  </div>
+</header>
+
+<main id="view-home">
+
+  <section class="hero">
+    <div class="hero-backdrop" aria-hidden="true"><img id="heroBg" alt=""></div>
+    <div class="glow-orb"></div>
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="hero-eyebrow">Online Art Gallery</span>
+        <h1 class="am-serif">ጋፋት የስእልና ንድፍ ስራዎች</h1>
+        <div class="en-name">Gafat Art Painting and Design Works</div>
+        <p class="statement">Where imagination becomes art.</p>
+        <div class="hero-ctas">
+          <a href="#gallery-section" class="btn-primary" data-link>Explore Art</a>
+          <a href="#contact" class="btn-ghost" data-link>Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="float-frame frame-a"><img id="heroImgA" alt="Featured artwork"></div>
+        <div class="float-frame frame-b"><img id="heroImgB" alt="Featured artwork detail"></div>
+        <div class="hero-badge one">
+          <span class="badge-icon"><svg viewBox="0 0 24 24"><path d="M12 3l2.3 5.2L20 10.5l-5.7 2.2L12 18l-2.3-5.3L4 10.5l5.7-2.3L12 3z"/><path d="M19 3v4M21 5h-4"/></svg></span>
+          Original Works
+        </div>
+        <div class="hero-badge two">
+          <span class="badge-icon"><svg viewBox="0 0 24 24"><path d="M4 18.5V20h1.5L18 7.5 16.5 6 4 18.5z"/><path d="M15 4l1.5-1.5L21 7l-1.5 1.5L15 4z"/><path d="M7 4h4M9 2v4"/></svg></span>
+          Made with feeling
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="accent"></div>
+        <div class="float-frame"><img id="aboutImg" alt="Studio artwork"></div>
+      </div>
+      <div class="about-copy reveal">
+        <span class="tag">About Gafat Art</span>
+        <h2 style="margin-bottom:20px; font-size:clamp(26px,3.4vw,38px);">About Gafat Art</h2>
+        <p>Gafat Art Painting and Design Works is a creative practice centered on painting and visual design — exploring color, form, and craftsmanship across a growing body of original work.</p>
+        <p>Every piece in this gallery reflects an ongoing pursuit of artistic expression and visual storytelling, from concept through finished canvas.</p>
+        <div class="about-points">
+          <span class="pt">Painting</span>
+          <span class="pt">Design</span>
+          <span class="pt">Craftsmanship</span>
+          <span class="pt">Visual Storytelling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-transition" aria-hidden="true">
+    <div class="transition-line"></div>
+    <span class="transition-orb"></span>
+    <div class="transition-line"></div>
+  </div>
+
+  <div id="gallery-section"></div>
+  <div id="collections-nav"></div>
+  <div id="collectionsRoot"></div>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="contact-grid">
+          <div class="reveal">
+            <h2>Let's Create Something Beautiful</h2>
+            <p class="lead">Reach out about a piece, a commission, or a design project — we'd love to hear from you.</p>
+            <div class="contact-actions">
+              <a class="contact-btn" href="mailto:melakudebas99@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+                Email Us
+              </a>
+              <a class="contact-btn" href="tel:+251911008854">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M6 3h4l2 5-3 2a12 12 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/></svg>
+                Call Us
+              </a>
+            </div>
+          </div>
+          <div class="reveal">
+            <div class="form-card">
+              <form id="contactForm">
+                <div id="formFields">
+                  <div class="field">
+                    <label for="cf-name">Name</label>
+                    <input type="text" id="cf-name" required>
+                  </div>
+                  <div class="field">
+                    <label for="cf-email">Email</label>
+                    <input type="email" id="cf-email" required>
+                  </div>
+                  <div class="field">
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" required></textarea>
+                  </div>
+                  <button type="submit" class="form-submit">Send Message</button>
+                  <p class="form-note">This form isn't connected to a server yet — submitting will open a pre-filled email instead, via <a href="mailto:melakudebas99@gmail.com">melakudebas99@gmail.com</a>.</p>
+                </div>
+                <div class="form-success" id="formSuccess">
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                  <p style="font-weight:700;">Your email app should now be open.</p>
+                  <p class="form-note">If it didn't open, email us directly at melakudebas99@gmail.com.</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<main id="view-collection">
+  <section class="coll-hero">
+    <div class="container">
+      <a href="#/" class="coll-back" data-link>
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M15 18l-6-6 6-6"/></svg>
+        Back to Home
+      </a>
+      <h1 id="collTitleEn"></h1>
+      <p class="am-serif" id="collTitleAm" style="font-size:20px; color:var(--ink-soft); margin-top:6px;"></p>
+      <p id="collIntro" style="margin-top:18px;"></p>
+    </div>
+  </section>
+  <section class="container">
+    <div class="masonry" id="collMasonry"></div>
+  </section>
+  <section class="coll-cta">
+    <div class="container">
+      <h3>Interested in a piece from this collection?</h3>
+      <a href="#contact" class="btn-primary" data-link>Get in Touch</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="am-serif">ጋፋት የስእልና ንድፍ ስራዎች</div>
+        <div class="en">Gafat Art Painting and Design Works</div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a class="flink" href="#/" data-link>Home</a></li>
+          <li><a class="flink" href="#gallery-section" data-link>Gallery</a></li>
+          <li><a class="flink" href="#about" data-link>About</a></li>
+          <li><a class="flink" href="#contact" data-link>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a class="flink" href="mailto:melakudebas99@gmail.com">melakudebas99@gmail.com</a></li>
+          <li><a class="flink" href="tel:+251911008854">+251 91 100 8854</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Gafat Art Painting and Design Works</span>
+      <span>ጋፋት የስእልና ንድፍ ስራዎች</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-arrow prev" id="lbPrev" aria-label="Previous artwork">
+    <svg class="icon" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <div class="lb-inner">
+    <button class="lb-close" id="lbClose" aria-label="Close">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="lb-img-wrap">
+      <img id="lbImage" alt="">
+    </div>
+    <div class="lb-caption">
+      <div class="t" id="lbTitle"></div>
+      <div class="n" id="lbNum"></div>
+    </div>
+  </div>
+  <button class="lb-arrow next" id="lbNext" aria-label="Next artwork">
+    <svg class="icon" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------- Image path generation ---------------- */
+  function pad2(n){ return n < 10 ? "0" + n : "" + n; }
+
+  var section1 = [
+    "art1","art2","art3","art4","art5","art6","art7","art8","art9","art10",
+    "art11","art12","art13","art14","art15","art16","art17","art18","art19","art20"
+  ];
+  var section2 = [
+    "art1_01","art1_02","art1_03","art1_04","art1_05","art1_06","art1_07","art1_08","art1_09","art1_10",
+    "art1_11","art1_12","art1_13","art1_14","art1_15","art1_16","art1_17","art1_18","art1_19","art1_20"
+  ];
+  var section3 = [
+    "art2_01","art2_02","art2_03","art2_04","art2_05","art2_06","art2_07","art2_08","art2_09","art2_10",
+    "art2_11","art2_12","art2_13","art2_14","art2_15","art2_16","art2_17","art2_18","art2_19","art2_20"
+  ];
+  var section4 = [
+    "art3_01","art3_02","art3_03","art3_04","art3_05","art3_06","art3_07","art3_08","art3_09","art3_10",
+    "art3_11","art3_12","art3_13","art3_14","art3_15","art3_16","art3_17","art3_18","art3_19","art3_20"
+  ];
+
+  function toImages(names){
+    return names.map(function(n, i){
+      return { file: n + ".jpg", src: n + ".jpg", title: "Artwork " + pad2(i + 1) };
+    });
+  }
+
+  var collections = [
+    { id: "collection-1", en: "Collection One", am: "ስብስብ አንድ", intro: "A first walk through the gallery — twenty pieces, side by side.", images: toImages(section1) },
+    { id: "collection-2", en: "Collection Two", am: "ስብስብ ሁለት", intro: "The second room of the exhibition.", images: toImages(section2) },
+    { id: "collection-3", en: "Collection Three", am: "ስብስብ ሶስት", intro: "Continuing the collection with twenty more works.", images: toImages(section3) },
+    { id: "collection-4", en: "Collection Four", am: "ስብስብ አራት", intro: "The final room in this set of collections.", images: toImages(section4) }
+  ];
+
+  /* ---------------- Graceful missing-image handling ---------------- */
+  function attachImg(imgEl, item){
+    imgEl.alt = item.title;
+    imgEl.loading = "lazy";
+    imgEl.decoding = "async";
+    imgEl.src = item.src;
+    imgEl.onerror = function(){
+      imgEl.onerror = null;
+      var wrap = imgEl.closest(".frame") || imgEl.parentElement;
+      if (wrap){
+        imgEl.style.display = "none";
+        var ph = document.createElement("div");
+        ph.className = "placeholder";
+        ph.innerHTML = '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg><span>' + item.title + '</span>';
+        wrap.appendChild(ph);
+      }
+    };
+  }
+
+  /* ---------------- Build homepage rails ---------------- */
+  var collectionsRoot = document.getElementById("collectionsRoot");
+
+  function buildCard(item, index, coll){
+    var card = document.createElement("div");
+     card.className = "art-card reveal tilt-card";
+    card.innerHTML =
+      '<div class="frame"><img></div>' +
+      '<span class="view-tag">View Artwork</span>' +
+      '<div class="cap"><div class="t">' + item.title + '</div><div class="n">' + coll.en + '</div></div>';
+    var img = card.querySelector("img");
+    attachImg(img, item);
+     card.addEventListener("pointermove", function(e){
+       var r = card.getBoundingClientRect();
+       var x = (e.clientX - r.left) / r.width - 0.5;
+       var y = (e.clientY - r.top) / r.height - 0.5;
+       card.style.setProperty("--ry", (x * 8).toFixed(2) + "deg");
+       card.style.setProperty("--rx", (y * -8).toFixed(2) + "deg");
+     });
+     card.addEventListener("pointerleave", function(){
+       card.style.setProperty("--ry", "0deg");
+       card.style.setProperty("--rx", "0deg");
+     });
+    card.addEventListener("click", function(){ openLightbox(coll.images, index); });
+    return card;
+  }
+
+  collections.forEach(function(coll, idx){
+    var block = document.createElement("section");
+    block.className = "collection-block";
+    block.id = idx === 0 ? "gallery-section-anchor" : "";
+
+    var head = document.createElement("div");
+    head.className = "container section-head reveal";
+    head.innerHTML =
+      '<div><span class="section-num">0' + (idx + 1) + '</span><h2 style="margin-top:8px;">' + coll.en + '</h2>' +
+      '<p class="sub am-serif" style="margin-top:6px;">' + coll.am + '</p></div>';
+    block.appendChild(head);
+
+    var railWrap = document.createElement("div");
+    railWrap.className = "container rail-wrap";
+    var rail = document.createElement("div");
+    rail.className = "rail";
+    coll.images.forEach(function(item, i){ rail.appendChild(buildCard(item, i, coll)); });
+    railWrap.appendChild(rail);
+
+    var navBtns = document.createElement("div");
+    navBtns.className = "rail-nav";
+    navBtns.innerHTML =
+      '<button class="rail-btn" aria-label="Scroll left"><svg class="icon" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>' +
+      '<button class="rail-btn" aria-label="Scroll right"><svg class="icon" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>';
+    railWrap.appendChild(navBtns);
+    var btns = navBtns.querySelectorAll(".rail-btn");
+    btns[0].addEventListener("click", function(){ rail.scrollBy({left:-600, behavior:"smooth"}); });
+    btns[1].addEventListener("click", function(){ rail.scrollBy({left:600, behavior:"smooth"}); });
+
+    block.appendChild(railWrap);
+
+    var exploreRow = document.createElement("div");
+    exploreRow.className = "container explore-row reveal";
+    exploreRow.innerHTML = '<a href="#/gallery/' + coll.id + '" class="explore-more" data-link>Explore More <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>';
+    block.appendChild(exploreRow);
+
+    collectionsRoot.appendChild(block);
+  });
+
+  /* set a couple of hero/about images from the first collection if available */
+  if (collections[0].images[0]) attachImg(document.getElementById("heroImgA"), collections[0].images[0]);
+  if (collections[0].images[1]) attachImg(document.getElementById("heroImgB"), collections[0].images[1]);
+  if (collections[0].images[0]) attachImg(document.getElementById("heroBg"), collections[0].images[0]);
+  if (collections[1] && collections[1].images[0]) attachImg(document.getElementById("aboutImg"), collections[1].images[0]);
+
+  /* ---------------- Collection detail page ---------------- */
+  var viewHome = document.getElementById("view-home");
+  var viewColl = document.getElementById("view-collection");
+
+  function renderCollectionPage(collId){
+    var coll = collections.find(function(c){ return c.id === collId; });
+    if (!coll) { location.hash = "#/"; return; }
+    document.getElementById("collTitleEn").textContent = coll.en;
+    document.getElementById("collTitleAm").textContent = coll.am;
+    document.getElementById("collIntro").textContent = coll.intro;
+    var masonry = document.getElementById("collMasonry");
+    masonry.innerHTML = "";
+    coll.images.forEach(function(item, i){ masonry.appendChild(buildCard(item, i, coll)); });
+    document.title = coll.en + " — Gafat Art Painting and Design Works";
+    revealObserve();
+  }
+
+  function router(){
+    var hash = location.hash || "#/";
+    var m = hash.match(/^#\/gallery\/([a-z0-9-]+)/i);
+    if (m){
+      viewHome.classList.add("hidden");
+      viewColl.classList.add("active");
+      renderCollectionPage(m[1]);
+      window.scrollTo({top:0});
+    } else {
+      viewColl.classList.remove("active");
+      viewHome.classList.remove("hidden");
+      document.title = "Gafat Art Painting and Design Works | ጋፋት የስእልና ንድፍ ስራዎች";
+    }
+  }
+  window.addEventListener("hashchange", router);
+
+  /* Intercept in-page anchor links so they still scroll smoothly after route changes */
+  document.addEventListener("click", function(e){
+    var a = e.target.closest("[data-link]");
+    if (!a) return;
+    var href = a.getAttribute("href");
+    if (href.charAt(0) === "#" && href.length > 1 && href.charAt(1) !== "/" ){
+      // in-page anchor on the home view
+      if (viewColl.classList.contains("active")){
+        location.hash = "#/";
+        setTimeout(function(){
+          var target = document.querySelector(href);
+          if (target) target.scrollIntoView({behavior:"smooth"});
+        }, 60);
+        e.preventDefault();
+      }
+    }
+    closeMobileMenu();
+  });
+
+  router();
+
+  /* ---------------- Lightbox ---------------- */
+  var lightbox = document.getElementById("lightbox");
+  var lbImage = document.getElementById("lbImage");
+  var lbTitle = document.getElementById("lbTitle");
+  var lbNum = document.getElementById("lbNum");
+  var currentSet = [];
+  var currentIndex = 0;
+
+  function openLightbox(images, index){
+    currentSet = images;
+    currentIndex = index;
+    updateLightbox();
+    lightbox.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+  function updateLightbox(){
+    var item = currentSet[currentIndex];
+    lbImage.onerror = function(){ lbImage.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Crect width='600' height='600' fill='%23F5EBDD'/%3E%3C/svg%3E"; };
+    lbImage.src = item.src;
+    lbImage.alt = item.title;
+    lbTitle.textContent = item.title;
+    lbNum.textContent = (currentIndex + 1) + " / " + currentSet.length;
+  }
+  function closeLightbox(){
+    lightbox.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+  function nextImg(){ currentIndex = (currentIndex + 1) % currentSet.length; updateLightbox(); }
+  function prevImg(){ currentIndex = (currentIndex - 1 + currentSet.length) % currentSet.length; updateLightbox(); }
+
+  document.getElementById("lbClose").addEventListener("click", closeLightbox);
+  document.getElementById("lbNext").addEventListener("click", nextImg);
+  document.getElementById("lbPrev").addEventListener("click", prevImg);
+  lightbox.addEventListener("click", function(e){ if (e.target === lightbox) closeLightbox(); });
+
+  document.addEventListener("keydown", function(e){
+    if (!lightbox.classList.contains("open")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowRight") nextImg();
+    if (e.key === "ArrowLeft") prevImg();
+  });
+
+  /* touch swipe */
+  var touchStartX = null;
+  lightbox.addEventListener("touchstart", function(e){ touchStartX = e.touches[0].clientX; }, {passive:true});
+  lightbox.addEventListener("touchend", function(e){
+    if (touchStartX === null) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    if (dx > 50) prevImg();
+    else if (dx < -50) nextImg();
+    touchStartX = null;
+  }, {passive:true});
+
+  /* ---------------- Nav scroll + mobile menu ---------------- */
+  var siteNav = document.getElementById("siteNav");
+  window.addEventListener("scroll", function(){
+    siteNav.classList.toggle("scrolled", window.scrollY > 30);
+  });
+
+  var hamburger = document.getElementById("hamburger");
+  var mobileMenu = document.getElementById("mobileMenu");
+  function closeMobileMenu(){
+    hamburger.classList.remove("open");
+    mobileMenu.classList.remove("open");
+    hamburger.setAttribute("aria-expanded", "false");
+  }
+  hamburger.addEventListener("click", function(){
+    var isOpen = mobileMenu.classList.toggle("open");
+    hamburger.classList.toggle("open", isOpen);
+    hamburger.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  /* ---------------- Reveal on scroll ---------------- */
+  var observer = null;
+  function revealObserve(){
+    var els = document.querySelectorAll(".reveal:not(.observed)");
+    if (!("IntersectionObserver" in window)){
+      els.forEach(function(el){ el.classList.add("is-visible"); });
+      return;
+    }
+    if (!observer){
+      observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if (entry.isIntersecting){
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+    }
+    els.forEach(function(el){ el.classList.add("observed"); observer.observe(el); });
+  }
+  revealObserve();
+
+  /* ---------------- Contact form (mailto fallback, no fake "sent") ---------------- */
+  var form = document.getElementById("contactForm");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = document.getElementById("cf-name").value.trim();
+    var email = document.getElementById("cf-email").value.trim();
+    var message = document.getElementById("cf-message").value.trim();
+    var subject = encodeURIComponent("Inquiry from " + name + " — Gafat Art");
+    var body = encodeURIComponent(message + "\n\n— " + name + " (" + email + ")");
+    window.location.href = "mailto:melakudebas99@gmail.com?subject=" + subject + "&body=" + body;
+    document.getElementById("formFields").style.display = "none";
+    document.getElementById("formSuccess").classList.add("show");
+  });
+
+})();
+</script>
+</body>
+</html>
