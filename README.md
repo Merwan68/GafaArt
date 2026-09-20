@@ -2,28 +2,30 @@
 
 ## How to use
 
-1. This folder contains `index.html` and an empty `images/` folder.
-2. Drop your 80 artwork files directly into `images/` — no subfolders — using these exact names:
+Just `index.html` — no `images/` folder needed. Upload your artwork photos
+to the **same folder** as `index.html` (repo root), using these exact filenames:
 
-   - **Collection One:** `art1.jpg` → `art20.png`
-   - **Collection Two:** `art1_01.jpg` → `art1_20.jpg`
-   - **Collection Three:** `art2_01.jpg` → `art2_20.jpg`
-   - **Collection Four:** `art3_01.jpg` → `art3_20.jpg`
+- **Collection One:** `art1.jpg` → `art20.jpg`
+- **Collection Two:** `art1_01.jpg` → `art1_20.jpg`
+- **Collection Three:** `art2_01.jpg` → `art2_20.jpg`
+- **Collection Four:** `art3_01.jpg` → `art3_20.jpg`
 
-3. Open `index.html` directly in a browser, or upload the whole folder to any static host
-   (Netlify, Vercel, GitHub Pages, cPanel, etc.).
+Open `index.html` directly in a browser, or upload the repo to any static host
+(GitHub Pages, Netlify, Vercel, etc.) — `index.html` should stay at the top level
+of the repo for GitHub Pages to find it automatically.
 
-If an image file is missing, that card shows an elegant placeholder instead of breaking —
-so you can launch the site before every artwork is in place and fill images in over time.
+If a photo is missing or not yet uploaded, that card shows an elegant placeholder
+instead of breaking — so the site works even before every artwork is in place.
 
 ## Editing content
 
-Open `index.html` and find the `collections` array near the top of the `<script>` block.
-Each collection has an `en` (English title), `am` (Amharic title), and `intro` line you can edit directly.
-Each artwork's `title` is generated automatically as "Artwork 01", "Artwork 02", etc. — edit the
-`toImages()` output, or the `title` field per image, to add real titles, descriptions, year, or medium later.
+Open `index.html` and find the `section1` / `section2` / `section3` / `section4`
+arrays near the top of the `<script>` block — these list every filename directly.
+Each collection also has an `en` (English title), `am` (Amharic title), and `intro`
+line you can edit. Titles for individual pieces ("Artwork 01", etc.) are set in the
+`toImages()` function — edit there, or per-image, to add real titles later.
 
 ## Routing
 
-Collection pages use hash-based routes so the whole site works as a single static file with
-no server config needed: `index.html#/gallery/collection-1`, `#/gallery/collection-2`, etc.
+Collection pages use hash-based routes, so the site works as a single static file
+with no server config: `index.html#/gallery/collection-1`, `#/gallery/collection-2`, etc.
