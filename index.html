@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -594,19 +594,27 @@
 
   /* ---------------- Image path generation ---------------- */
   function pad2(n){ return n < 10 ? "0" + n : "" + n; }
-  function gen(prefixFn, count){
-    var arr = [];
-    for (var i = 1; i <= count; i++){ arr.push(prefixFn(i)); }
-    return arr;
-  }
-  var section1 = gen(function(n){ return "art" + n; }, 20);           // art1..art20
-  var section2 = gen(function(n){ return "art0" + n; }, 20);          // art01..art020
-  var section3 = gen(function(n){ return "art00" + n; }, 20);         // art001..art0020
-  var section4 = gen(function(n){ return "art1" + pad2(n); }, 20);    // art101..art120
+
+  var section1 = [
+    "art1","art2","art3","art4","art5","art6","art7","art8","art9","art10",
+    "art11","art12","art13","art14","art15","art16","art17","art18","art19","art20"
+  ];
+  var section2 = [
+    "art1_01","art1_02","art1_03","art1_04","art1_05","art1_06","art1_07","art1_08","art1_09","art1_10",
+    "art1_11","art1_12","art1_13","art1_14","art1_15","art1_16","art1_17","art1_18","art1_19","art1_20"
+  ];
+  var section3 = [
+    "art2_01","art2_02","art2_03","art2_04","art2_05","art2_06","art2_07","art2_08","art2_09","art2_10",
+    "art2_11","art2_12","art2_13","art2_14","art2_15","art2_16","art2_17","art2_18","art2_19","art2_20"
+  ];
+  var section4 = [
+    "art3_01","art3_02","art3_03","art3_04","art3_05","art3_06","art3_07","art3_08","art3_09","art3_10",
+    "art3_11","art3_12","art3_13","art3_14","art3_15","art3_16","art3_17","art3_18","art3_19","art3_20"
+  ];
 
   function toImages(names){
     return names.map(function(n, i){
-      return { file: n + ".png", src: "images/" + n + ".png", title: "Artwork " + pad2(i + 1) };
+      return { file: n + ".jpg", src: n + ".jpg", title: "Artwork " + pad2(i + 1) };
     });
   }
 
