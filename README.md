@@ -5,10 +5,10 @@
 1. This folder contains `index.html` and an empty `images/` folder.
 2. Drop your 80 artwork files directly into `images/` — no subfolders — using these exact names:
 
-   - **Collection One:** `art1.png` → `art20.png`
-   - **Collection Two:** `art01.png` → `art020.png`
-   - **Collection Three:** `art001.png` → `art0020.png`
-   - **Collection Four:** `art101.png` → `art120.png`
+   - **Collection One:** `art1.jpg` → `art20.png`
+   - **Collection Two:** `art1_01.jpg` → `art1_20.jpg`
+   - **Collection Three:** `art2_01.jpg` → `art2_20.jpg`
+   - **Collection Four:** `art3_01.jpg` → `art3_20.jpg`
 
 3. Open `index.html` directly in a browser, or upload the whole folder to any static host
    (Netlify, Vercel, GitHub Pages, cPanel, etc.).
